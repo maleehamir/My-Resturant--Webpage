@@ -5,14 +5,19 @@
         <a class="active" href="#Home">HOME</a>
         <a href="#">ABOUT US</a>
         <a href="#">CONTACT US</a>
-        <a href="#">SEVICES</a>
-        <a href="#">OFFERS</a>
+        <a href="#DEALS">DEALS</a>
+        <a href="#AREAS">AREAS</a>
     </div>
+    <section>
+      <p>
+        
+      </p>
+    </section>
     <style>
         body{
             margin: 0;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            background-color: aqua;
+            background-color: palevioletred;
         }
       .topnav{
         overflow: hidden;
@@ -43,8 +48,33 @@
       <img class="mySlides" src="photo-1686766619856-46c4aea9e9ca.avif" style="height: 500px;" width="px;">
       <img class="mySlides" src="photo-1686766619856-46c4aea9e9ca.avif" style="height: 500px;" width="px;">
     </section>
+      <section>
+        <p>
+          highlights the food you serve, the atmosphere, the location, and the dining experience.
+        </p>
+      </section>
+      <br>
+      <section>
+        <p>
+      restaurant, establishment where refreshments or meals may be procured by the public. The public dining room that
+      ultimately came to be known as the restaurant originated in France, and the French have continued to make major
+      contributions to the restaurant's development
+        </p>
+      </section>
     <script>
-        
+        var myIndex = 0;
+        carousel();
+        function carousel(){
+          var i;
+          var x =document.getElementsByClassName("mySlides");
+          for (i = 0; < i x.lengt i++){
+            x[i].style.display = "none";
+          }
+          myIndex ++ ;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex - 1].style.display = "block";
+          setTimeout(carousel,3000);
+        }
     </script>
     </body>
 </html>
